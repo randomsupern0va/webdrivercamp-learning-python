@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 def dict_print(dict_):
-	if len(dict_) == 0:
+	if not dict_:
 		print("The dictionary is empty")
 	for key in sorted(dict_.keys()):
 		print(key, ":", dict_[key])
-
 	
 
 if __name__=="__main__":
