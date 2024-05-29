@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 def int_print(value):
+	if not value:
+		return None
+
 	try:
 		print(f"{int(value):d}")	
 		return True
