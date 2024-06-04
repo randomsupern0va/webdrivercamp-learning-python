@@ -1,0 +1,16 @@
+0. //div[@id='mainContent']/div[1]/div/div/ul/li/a
+
+1. //li[contains(@class, 'x-refine__main__list')][./div/h3[not(contains(., "Category"))]]  
+
+2. //li[contains(@class, 'x-refine__main__list')][./div/h3[contains(., "Brand")]]
+
+   //li[contains(@class, 'x-refine__main__list')][./div/h3[contains(., "Color")]]
+3. //li[contains(@class, 'x-refine__main__list')][./div/h3[contains(., 'Brand')]]//input[@class='checkbox__control'][@aria-label='adidas']
+
+   //li[contains(@class, 'x-refine__main__list')][./div/h3[contains(., 'Color')]]//input[@class='checkbox__control'][@aria-label='Blue']
+4. //li[@class='s-item s-item__pl-on-bottom']
+   //input[@type='text' and @name='_nkw' and @id='gh-ac' and translate(@value, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = 'shoes']
+
+5. //div[@class='gh-menu']//a[@class='gh-eb-li-a gh-rvi-menu'][contains(text(), 'My eBay')] (FOR THE ENTIRE DROPDOWN)
+   //a[contains(@class, 'gh-eb-oa')]   (FOR THE 14 ITEMS INSIDE)
+To pause the page: Type debugger; in Console tab, then hover over dropdown so that it opens, then press Enter in the Console to active debugger 
